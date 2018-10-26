@@ -12,13 +12,13 @@ class _04_SearchTest {
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
 		String[] array = {"one", "two", "three", "four", "five", "six"};
-		assertEquals(3, _00_LinearSearch.linearSearch(array, "two"));
+		assertEquals(3, _00_LinearSearch.linearSearch(array, "four"));
 		
 		String[] array1 = {"C", "h", "r", "i", "s"};
-		assertEquals(2, _00_LinearSearch.linearSearch(array, "r"));
+		assertEquals(2, _00_LinearSearch.linearSearch(array1, "r"));
 		
 		String[] array2 = {"uno", "dos", "tres"};
-		assertEquals(0, _00_LinearSearch.linearSearch(array, "two"));
+		assertEquals(0, _00_LinearSearch.linearSearch(array2, "uno"));
 		
 	}
 
@@ -30,10 +30,10 @@ int[] array = {1,2,3,4,5};
 assertEquals(0, _01_BinarySearch.binarySearch(array, 0, 4, 1));
 
 int[] array2 = {1,2,3};
-assertEquals(2, _01_BinarySearch.binarySearch(array, 0, 2, 3));
+assertEquals(2, _01_BinarySearch.binarySearch(array2, 0, 2, 3));
 
 int[] array3 = {2,4,6,8,10};
-assertEquals(4, _01_BinarySearch.binarySearch(array, 0, 4, 10));
+assertEquals(4, _01_BinarySearch.binarySearch(array3, 0, 4, 10));
 	
 	}
 	
@@ -58,10 +58,10 @@ assertEquals(4, _02_InterpolationSearch.interpolationSearch(array2, 5));
 		assertEquals(2, _03_ExponentialSearch.exponentialSearch(array, 3));
 
 		int[] array2 = {1,2,3};
-		assertEquals(0, _03_ExponentialSearch.exponentialSearch(array, 1));
+		assertEquals(0, _03_ExponentialSearch.exponentialSearch(array2, 1));
 
 		int[] array3 = {2,4,6,8,10};
-		assertEquals(4, _03_ExponentialSearch.exponentialSearch(array, 10));
+		assertEquals(4, _03_ExponentialSearch.exponentialSearch(array3, 10));
 	
 	}
 }
