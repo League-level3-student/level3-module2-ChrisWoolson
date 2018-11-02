@@ -97,4 +97,23 @@ public class Algorithms {
 
 	}
 
+	public static List<String> sortWords(List <String> word){
+		for (int i = 0; i < word.size() - 1; i++) {
+
+			for (int j = i + 1; j < word.size(); j++) {
+				if(word.get(i).compareTo(word.get(i+1)) == -1) {
+					String save = word.get(i);
+					String save2 = word.get(i+1);
+					word.set(i, save2);
+					word.set(i+1, save);
+				}
+			}
+		}
+
+		return word;
+		
+	}
+	
+	
+	
 }
