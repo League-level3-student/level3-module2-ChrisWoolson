@@ -12,7 +12,7 @@ public class BubbleSorter extends Sorter{
 	void sort(int[] array, SortingVisualizer display) {
 		for (int z = 0; z < array.length; z++) {
 			
-		display.updateDisplay();
+		
 		for (int i = 0; i < array.length-1; i++) {
 			if(array[i] > array[i+1]) {
 				int uno= array[i];
@@ -20,6 +20,7 @@ public class BubbleSorter extends Sorter{
 				
 				array[i] = dos;
 				array[i+1] = uno;
+				display.updateDisplay();
 			}
 		}
 	}
